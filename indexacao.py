@@ -15,12 +15,19 @@ mascara = matriz > 5
 minha_matriz = np.arange(1, 10).reshape(3, 3)
 # print(minha_matriz)
 
-fatia = minha_matriz > 5
+# fatia = minha_matriz > 5
 
 # print(minha_matriz[fatia])
 
 indices_linhas = np.array([1, 2, 2, 2])
 indices_colunas = np.array([2, 0, 1, 2])
+print(minha_matriz[indices_colunas])
 
-elementos_alvo_indexacao = minha_matriz[indices_linhas, indices_colunas]
-print(f"Resultado com indexação avançada: {elementos_alvo_indexacao}")
+
+# elementos_alvo_indexacao = minha_matriz[indices_linhas, indices_colunas]
+# print(f"Resultado com indexação avançada: {elementos_alvo_indexacao}")
+
+# sub_matriz = matriz[:2, :2]
+# print(sub_matriz)
+# resultado = matriz[elemento_unico, linha]
+# print(resultado)
