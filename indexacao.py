@@ -11,12 +11,16 @@ matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 mascara = matriz > 5
 # print(mascara)
 
-print(matriz[mascara])
 
-mask = matriz[3, ]
-print(mask)
-linhas = np.array([1, 2, 2, 2])
-colunas = np.array([2, 0, 1, 2])
+minha_matriz = np.arange(1, 10).reshape(3, 3)
+# print(minha_matriz)
 
-valores_vermelhos = mat[linhas, colunas]
-print(valores_vermelhos)
+fatia = minha_matriz > 5
+
+# print(minha_matriz[fatia])
+
+indices_linhas = np.array([1, 2, 2, 2])
+indices_colunas = np.array([2, 0, 1, 2])
+
+elementos_alvo_indexacao = minha_matriz[indices_linhas, indices_colunas]
+print(f"Resultado com indexação avançada: {elementos_alvo_indexacao}")
