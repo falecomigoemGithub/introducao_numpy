@@ -21,7 +21,7 @@ minha_matriz = np.arange(1, 10).reshape(3, 3)
 
 indices_linhas = np.array([1, 2, 2, 2])
 indices_colunas = np.array([2, 0, 1, 2])
-print(minha_matriz[indices_colunas])
+# print(minha_matriz[indices_colunas])
 
 
 # elementos_alvo_indexacao = minha_matriz[indices_linhas, indices_colunas]
@@ -31,3 +31,8 @@ print(minha_matriz[indices_colunas])
 # print(sub_matriz)
 # resultado = matriz[elemento_unico, linha]
 # print(resultado)
+
+array_numpy = np.array([0, 1, 2, 3, 4, 5])
+
+print(array_numpy[-3:-1])
+print(array_numpy[3:])
